@@ -1,0 +1,58 @@
+---
+title: "What is UGENE?"
+weight: 100
+---
+
+
+# What is UGENE?
+
+_**Unipro UGENE**_ is a free cross-platform genome analysis suite. It is distributed under the terms of the GNU General Public License. To learn more about UGENE visit [UGENE website](http://ugene.unipro.ru). It works on Windows, Mac OS X or Linux and requires only a few clicks to install.
+
+#### Key Features
+
+*   Powerful viewers and editors for DNA and protein sequences, multiple sequence alignments, chromatograms, 3D-structures, short read assemblies and phylogenetic trees.
+*   Support for dozens data formats, set of tools for importing and exporting data.
+*   Visual designer, runner and debugger for computational workflows from over 100 embedded algorithmic elements.
+*   Reusable computational workflows that can be shared, published and read as plain text by everyone.
+*   Full featured command line only version for remote desktops.
+*   Automatic detection and optimization for multi-core hardware, GPGPU, special instruction sets available on user's PC
+*   Setting up UGENE package user automatically gets dozens of tools installed and configured for immediate use
+
+#### Tools provided with UGENE installation
+
+*   BLAST - a popular tool for searching similarities between biological sequences.
+*   HMMER2/HMMER3 - sequence analysis using profile hidden Markov models, constructed from multiple sequence alignments.
+*   ClustalW, ClustalO, MUSCLE, Kalign, MAFFT, T-Coffee multiple sequence alignment algorithms.
+*   Repeat finding and sequence comparison algorithms with a convenient dot-plot based results visualization.
+*   Open reading frames visualization and export.
+*   Restriction sites visualization tool with the integrated REBASE database.
+*   Transcription factor binding sites analysis with SITECON, weight-matrix based algorithms and included version of JASPAR database.
+*   Short read aligners: BWA, BWA-MEM, Bowtie, Bowtie2, TopHat, etc.
+*   GC-content, AT-content graphs.
+*   MrBayes, Phylip and PhyML tools for phylogenetic trees construction.
+*   ... and dozens of other popular and highly cited tools.
+
+#### Hardware requirements
+
+*   The system requirements for UGENE are these:
+
+    *   _Operating system (32 or 64 bit):_ Windows, Mac OS, Linux.
+    *   _RAM:_
+        *   512 Mb RAM is required.
+        *   At least 2Gb RAM is recommended.
+    *   _Disk space:_
+        The minimum required disk space depends on the [UGENE package](https://local.ugene.unipro.ru/wiki/display/UUOUM/UGENE+Packages):
+        *   Standard package: 200-300 Mb
+        *   Full package: 500-900 Mb
+        *   NGS package: 21-24 Gb
+
+    In most cases it is recommended to use UGENE full package, as it embeds additional external tools, such as local BLAST, Bowtie, etc. When the full package is used, the external tools can be run out of the box.
+
+    The list of the external tools and their availability for different operating systems can be seen on [this page](http://ugene.net/external.html).
+
+    For details about the system requirements see the [corresponding chapter](https://ugene.unipro.ru/wiki/x/YYF7) in the UGENE User Manual. For details about UGENE packages, see [this page](https://ugene.unipro.ru/wiki/x/bw32).
+
+
+#### Commercial support
+
+The commercial support includes bug-fixing on a priority basis, implementation of new features, and more. To know more, please [contact us](mailto:ugene@unipro.ru).
