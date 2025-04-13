@@ -1,0 +1,19 @@
+baseURL = "https://ugene.net/quick-start-guide/"
+title = "UGENE Quick Start Guide"
+theme = "docsy"
+languageCode = "en-us"
+
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  copyright = "Unipro UGENE"
+  offlineSearch = true
+  ui.defaultTheme = "light"
+  ui.footerAbout = false
+  ui.breadcrumb = true
+  ui.sidebar_menu_foldable = true
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true

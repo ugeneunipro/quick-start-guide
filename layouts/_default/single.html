@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="row flex-xl-nowrap">
+    <aside class="col-12 col-md-3 col-xl-2 td-sidebar">
+        {{ partial "sidebar-tree.html" . }}
+    </aside>
+    <div class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5">
+        <div class="doc-content">
+            {{ partial "breadcrumb.html" . }}
+            {{ .Content }}
+            {{ partial "page-navigation.html" . }}
+            {{ partial "center-sidebar-item.html" . }}
+        </div>
+    </div>
+</div>
+{{ end }}

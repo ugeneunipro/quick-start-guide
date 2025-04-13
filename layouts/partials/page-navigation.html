@@ -1,0 +1,65 @@
+{{ $current := . }}
+
+{{ $scratch := .Scratch | default (newScratch) }}
+{{ $scratch.Set "flatSidebar" (slice) }}
+
+{{ define "flattenSidebarTree" }}
+{{ $node := .node }}
+{{ $scratch := .scratch }}
+
+{{ with $node.Permalink }}
+    {{ $scratch.Add "flatSidebar" $node }}
+{{ end }}
+{{ $all := union $node.Pages $node.Sections }}
+
+{{ $children := slice }}
+{{ range $child := $all }}
+    {{ if not (eq $child.Params.toc_hide true) }}
+        {{ $children = $children | append $child }}
+    {{ end }}
+{{ end }}
+
+{{ $children = sort $children "Weight" }}
+
+{{ $truncate := $node.Site.Params.ui.sidebar_menu_truncate | default 100 }}
+{{ $children = $children | first $truncate }}
+    {{ range $child := $children }}
+        {{ template "flattenSidebarTree" (dict "node" $child "scratch" $scratch) }}
+    {{ end }}
+{{ end }}
+
+{{ $navRoot := cond (and (ne .Params.toc_root true) (eq .Site.Home.Type "docs")) .Site.Home .FirstSection }}
+
+{{ template "flattenSidebarTree" (dict "node" $navRoot "scratch" $scratch) }}
+
+{{ $flat := $scratch.Get "flatSidebar" }}
+
+{{ $currentIndex := -1 }}
+{{ range $i, $page := $flat }}
+    {{ if eq $page.RelPermalink $current.RelPermalink }}
+        {{ $currentIndex = $i }}
+    {{ end }}
+{{ end }}
+
+{{ $prevPage := false }}
+{{ $nextPage := false }}
+
+{{ if gt $currentIndex 0 }}
+    {{ $prevPage = index $flat (sub $currentIndex 1) }}
+{{ end }}
+
+{{ if lt $currentIndex (sub (len $flat) 1) }}
+    {{ $nextPage = index $flat (add $currentIndex 1) }}
+{{ end }}
+
+<div class="page-navigation-block">
+    <hr>
+    <div class="prev-next-links-block">
+        {{ if $prevPage }}
+        <a href="{{ $prevPage.RelPermalink }}" class="prev-next-link">« {{ $prevPage.Title }}</a>
+        {{ end }}
+        {{ if $nextPage }}
+        <a href="{{ $nextPage.RelPermalink }}" class="prev-next-link">{{ $nextPage.Title }} »</a>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "hugo server",
+    "dev-theme": "hugo server --disableFastRender --watch --themesDir=./themes",
+    "prod": "hugo --minify"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
+}
