@@ -5,15 +5,19 @@ chromatograms, 3D models, statistical data, etc. For each file, UGENE analyzes t
 the most appropriate view. To activate the &lt;em>Sequence View&lt;/em>, open any file with at least one sequence. For example, you
 can use the $&lt;em>ugene/data/samples/Genbank/murine.gb&lt;/em> file provided with UGENE. After opening the file in UGENE, the
 &lt;em>Sequence View&lt;/em> window appears:&lt;/p></description></item><item><title>What is UGENE?</title><link>https://ugene.net/quick-start-guide/what-is-ugene/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ugene.net/quick-start-guide/what-is-ugene/</guid><description>&lt;h1 id="what-is-ugene">What is UGENE?&lt;/h1>
-&lt;p>&lt;em>&lt;strong>Unipro UGENE&lt;/strong>&lt;/em> is a free cross-platform genome analysis suite. It is distributed under the terms of the GNU General Public License. To learn more about UGENE, visit the &lt;a href="http://ugene.unipro.ru">UGENE website&lt;/a>. It works on Windows, Mac OS X, or Linux and requires only a few clicks to install.&lt;/p>
+&lt;p>&lt;em>&lt;strong>Unipro UGENE&lt;/strong>&lt;/em> is a free cross-platform genome analysis suite. It is distributed under the terms of the GNU General
+Public License. To learn more about UGENE, visit the &lt;a href="http://ugene.unipro.ru">UGENE website&lt;/a>. It works on Windows, Mac
+OS X, or Linux and requires only a few clicks to install.&lt;/p>
 &lt;h4 id="key-features">Key Features&lt;/h4>
 &lt;ul>
-&lt;li>Powerful viewers and editors for DNA and protein sequences, multiple sequence alignments, chromatograms, 3D-structures, short read assemblies, and phylogenetic trees.&lt;/li>
+&lt;li>Powerful viewers and editors for DNA and protein sequences, multiple sequence alignments, chromatograms,
+3D-structures, short read assemblies, and phylogenetic trees.&lt;/li>
 &lt;li>Support for dozens of data formats, and a set of tools for importing and exporting data.&lt;/li>
 &lt;li>Visual designer, runner, and debugger for computational workflows from over 100 embedded algorithmic elements.&lt;/li>
 &lt;li>Reusable computational workflows that can be shared, published, and read as plain text by everyone.&lt;/li>
 &lt;li>A fully featured command-line version for remote desktops.&lt;/li>
-&lt;li>Automatic detection and optimization for multi-core hardware, GPGPU, and special instruction sets available on the user&amp;rsquo;s PC.&lt;/li>
+&lt;li>Automatic detection and optimization for multicore hardware, GPGPU, and special instruction sets available on the
+user&amp;rsquo;s PC.&lt;/li>
 &lt;li>Setting up the UGENE package automatically gets dozens of tools installed and configured for immediate use.&lt;/li>
 &lt;/ul>
 &lt;h4 id="tools-provided-with-ugene-installation">Tools provided with UGENE installation&lt;/h4>
@@ -24,16 +28,16 @@ can use the $&lt;em>ugene/data/samples/Genbank/murine.gb&lt;/em> file provided w
 &lt;li>Repeat finding and sequence comparison algorithms with convenient dot-plot-based results visualization.&lt;/li>
 &lt;li>Open reading frames visualization and export.&lt;/li>
 &lt;li>Restriction sites visualization tool with the integrated REBASE database.&lt;/li>
-&lt;li>Transcription factor binding sites analysis with SITECON, weight-matrix-based algorithms, and included versions of the JASPAR database.&lt;/li>
+&lt;li>Transcription factor binding sites analysis with SITECON, weight-matrix-based algorithms, and included versions of the
+JASPAR database.&lt;/li>
 &lt;li>Short read aligners: BWA, BWA-MEM, Bowtie, Bowtie2, TopHat, etc.&lt;/li>
 &lt;li>GC-content, AT-content graphs.&lt;/li>
 &lt;li>MrBayes, Phylip, and PhyML tools for phylogenetic tree construction.&lt;/li>
 &lt;li>&amp;hellip; and dozens of other popular and highly cited tools.&lt;/li>
 &lt;/ul>
-&lt;h4 id="hardware-requirements">Hardware requirements&lt;/h4>
-&lt;ul>
-&lt;li>
-&lt;p>The system requirements for UGENE are the following:&lt;/p></description></item><item><title>View, Edit and Align Multiple Sequence Alignments</title><link>https://ugene.net/quick-start-guide/what-you-can-do-in-ugene/view-edit-and-align-multiple-sequence-alignments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ugene.net/quick-start-guide/what-you-can-do-in-ugene/view-edit-and-align-multiple-sequence-alignments/</guid><description>&lt;h1 id="view-edit-and-align-multiple-sequence-alignments">View, Edit and Align Multiple Sequence Alignments&lt;/h1>
+&lt;h4 id="commercial-support">Commercial support&lt;/h4>
+&lt;p>The commercial support includes bug-fixing on a priority basis, implementation of new features, and more. To learn more,
+please &lt;a href="mailto:ugene@unipro.ru">contact us&lt;/a>.&lt;/p></description></item><item><title>View, Edit and Align Multiple Sequence Alignments</title><link>https://ugene.net/quick-start-guide/what-you-can-do-in-ugene/view-edit-and-align-multiple-sequence-alignments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ugene.net/quick-start-guide/what-you-can-do-in-ugene/view-edit-and-align-multiple-sequence-alignments/</guid><description>&lt;h1 id="view-edit-and-align-multiple-sequence-alignments">View, Edit and Align Multiple Sequence Alignments&lt;/h1>
 &lt;p>&lt;strong>Multiple Sequence Alignment (&lt;em>MSA Editor&lt;/em>).&lt;/strong> The &lt;em>Alignment Editor&lt;/em> is a powerful tool for visualizing and editing
 DNA, RNA, or protein multiple sequence alignments. To activate the &lt;em>Alignment Editor&lt;/em> open any alignment file. For
 example, you can use the $&lt;em>ugene/data/samples/CLUSTALW/COI.aln&lt;/em> file provided with UGENE. After opening the file in
